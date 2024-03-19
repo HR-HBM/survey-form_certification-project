@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">User Survey Form</h1>
+        <p id="description">Fill the form below to share your thoughts on the experience you've had with our platform.</P>
+            <form id="survey-form">
+                <div class="form-section">
+                    <label id="name-label" for="name">Name: <input id="name"  name="name" type="text" required placeholder="Enter your name" /></label>
+                </div>
+                <div class="form-section">
+                    <label id="email-label" for="email">Email: <input id="email" name="email" type="email" required placeholder="Enter your email" /></label>
+                </div>
+                <div class="form-section">
+                    <label id="number-label" for="number">Age (optional)<input id="number" name="age" type="number" min="16" max="112" placeholder="Age" /></label>
+                </div>
+                <div class="form-section">
+                    <label for="dropdown"> What is your highest level of education?
+                        <select id="dropdown" name="dropdown">
+                            <option value="">(select education level)</option>
+                            <option value="1">Ordinary Level</option>
+                            <option value="2">Advanced Level</option>
+                            <option value="3">Diploma</option>
+                            <option value="4">Degree</option>
+                            <option value="5">Other</option>
+                        </select>
+                    </label>                      
+                </div>
+                <div class="form-section">
+                    <legend>How did you hear about us?</legend>
+                    <label for="google"><input type="radio" name="introduced-by" id="google" value="google" class="inline" checked />Google Search</label>
+                    <label for="institution"><input type="radio" name="introduced-by" id="institution" value="institution" class="inline" />Local Institution</label>
+                    <label for="social"><input type="radio" name="introduced-by" id="social" value="social" class="inline" />Social Media</label>
+                    <label for="friend"><input type="radio" name="introduced-by" id="friend" value="friend" class="inline" />Friend's Recommendation</label>
+                </div>
+                <div class="form-section">
+                    <p>Which of our services did you find useful?</p>
+                    <label><input type="checkbox" name="service" value="tutoring" class="inline">Private Tutoring</label>
+                    <label><input type="checkbox" name="service" value="Webinr" class="inline">Webinars</label>
+                    <label><input type="checkbox" name="service" value="workshop" class="inline">Workshops</label>
+                    <label><input type="checkbox" name="service" value="quiz" class="inline">Quizzes and Exams</label>
+                    <label><input type="checkbox" name="service" value="career" class="inline">Career Counselling</label>
+                </div>
+                <div class="form-section">
+                    <p>Let us know your thoughts and comments on our services. </p>
+                    <textarea name="comment" id="comments" cols="30" rows="10" placeholder="Enter your text here..."></textarea>
+                </div>
+                <div class="form-section">
+                    <button type="submit" id="submit">Submit</button>
+                </div>   
+        </form>
+    </div>        
+</body>
+</html>
