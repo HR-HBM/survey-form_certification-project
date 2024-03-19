@@ -1,0 +1,72 @@
+body {
+    background-image: url("https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(160, 212, 212);
+    background-blend-mode: multiply;
+}
+.container {
+    text-align: center;
+}
+h1 {
+    font-family: 'Red Hat Display';
+    font-size: 3rem;
+    font-weight: 700;
+}
+div.container > p {
+    font-family: 'Georama';
+    font-size: 1.2rem;
+}
+h1, div.container > p {
+    max-width: 500px;
+    min-width: 200px;
+    margin: 25px auto;
+}
+input, textarea, button, select {
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 5px 10px 20px 0;
+    line-height: 2.25em;
+    font-family: 'Georama';
+    font-size: 1.2rem;
+    
+}
+button {
+    text-align: center;
+
+}
+#survey-form {
+    background-color: rgba(81, 146, 146, 0.9);
+    min-width: 150px;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 30px 15px;
+    text-align: left;    
+}
+.inline {
+    width: unset;
+    vertical-align: middle;
+    margin: 0 0.5rem 0 0;
+}
+label, legend, p {
+    display: block;
+    font-family: 'Red Hat Display';
+    font-size: 1.25rem;
+}
+textarea {
+    line-height: unset;
+}
+select {
+    height: 50px;
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+}
+legend {
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.form-section > p {
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
